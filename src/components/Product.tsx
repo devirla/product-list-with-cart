@@ -22,7 +22,7 @@ const Product = ({ product }: PropsType): ReactElement => {
   the first time. Always increases the quantity of the product by one and 
   setting inCart variable as true. 
 */
-  const increaseProduct = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const increaseProduct = () => {
     dispatch({
       type: REDUCER_ACTIONS.INCREASE,
       payload: { ...product, image: product.image.thumbnail, qty: 1 },
@@ -34,7 +34,7 @@ const Product = ({ product }: PropsType): ReactElement => {
   to 0 and setting inCart variable as false. 
   Always decreases the quantity of the product by one.
 */
-  const decreaseProduct = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const decreaseProduct = () => {
     dispatch({
       type: REDUCER_ACTIONS.DECREASE,
       payload: { ...product, image: product.image.thumbnail, qty: 1 },
