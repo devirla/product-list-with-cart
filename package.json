@@ -2,13 +2,13 @@
   "name": "product_list_with_cart",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/devirla/product_list_with_cart",
+  "homepage": "https://devirla.github.io/product-list-with-cart/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d distnpm install gh-pages --save-dev",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
