@@ -120,6 +120,15 @@ html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
 }
 
+/* Media Queries */
+@media (min-width: 1000px) {
+  .amount-button {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+  }
+}
+/* Media Queries */
 /*Mixins */
 /* END Mixins */
 /* Text and fonts */
@@ -185,10 +194,6 @@ html {
 .product-image {
   border-radius: 7px;
   width: 100%;
-}
-
-.product-image-active {
-  border: 3px solid hsl(14, 86%, 42%);
 }
 
 .product-info {
@@ -388,4 +393,4 @@ html {
   .confirmed-cart-item {
     padding: 1em 0 1em 0;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
