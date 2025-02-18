@@ -23,13 +23,6 @@ const Product = ({ product }: PropsType): ReactElement => {
   setting inCart variable as true. 
 */
   const increaseProduct = (e: React.MouseEvent<HTMLButtonElement>) => {
-    if (qty == 0) {
-      let imgContainer: HTMLElement | null = (
-        (e.target as HTMLInputElement).parentNode!.parentNode!
-          .firstChild as HTMLElement
-      )?.querySelector(".product-image");
-      imgContainer!.style.border = "3px solid hsl(14, 86%, 42%)";
-    }
     dispatch({
       type: REDUCER_ACTIONS.INCREASE,
       payload: { ...product, image: product.image.thumbnail, qty: 1 },
@@ -42,13 +35,6 @@ const Product = ({ product }: PropsType): ReactElement => {
   Always decreases the quantity of the product by one.
 */
   const decreaseProduct = (e: React.MouseEvent<HTMLButtonElement>) => {
-    if (qty == 1) {
-      let imgContainer: HTMLElement | null = (e.target as HTMLInputElement)
-        .closest("section")!
-        .querySelector(".product-image");
-      imgContainer!.style.border = "none";
-    }
-
     dispatch({
       type: REDUCER_ACTIONS.DECREASE,
       payload: { ...product, image: product.image.thumbnail, qty: 1 },
@@ -65,7 +51,12 @@ const Product = ({ product }: PropsType): ReactElement => {
     <article className="product-item" id={product.name}>
       <section>
         <div className="product-image-container">
-          <img className="product-image" src={product.image.mobile} />
+          <img
+            className={
+              "product-image" + (qty > 0 ? " product-image-active" : "")
+            }
+            src={product.image.mobile}
+          />
         </div>
 
         {qty !== 0 ? (

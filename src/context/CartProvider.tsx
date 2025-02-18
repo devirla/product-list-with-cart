@@ -36,7 +36,6 @@ export type ReducerType = {
 */
 const reducer = (state: CartStateType, action: ReducerType): CartStateType => {
   switch (action.type) {
-
     case REDUCER_ACTION_TYPE.INCREASE: {
       if (!action.payload) {
         throw new Error("There is no payload in action INCREASE");
@@ -90,12 +89,10 @@ const reducer = (state: CartStateType, action: ReducerType): CartStateType => {
       return { ...state, cart: [...filteredCartItems] };
     }
 
-
     case REDUCER_ACTION_TYPE.NEW_ORDER: {
       return { ...state, cart: [] };
     }
 
-    
     case REDUCER_ACTION_TYPE.SUBMIT: {
       return { ...state };
     }

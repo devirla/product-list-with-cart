@@ -187,6 +187,10 @@ html {
   width: 100%;
 }
 
+.product-image-active {
+  border: 3px solid hsl(14, 86%, 42%);
+}
+
 .product-info {
   padding: 0.69em 0 1.17em 0;
 }
@@ -384,4 +388,4 @@ html {
   .confirmed-cart-item {
     padding: 1em 0 1em 0;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
