@@ -1,0 +1,84 @@
+@import "variables";
+
+@mixin basic-button {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 25px;
+  padding: 11px 29px;
+  cursor: pointer;
+}
+
+.button-container {
+  position: relative;
+  z-index: 150;
+}
+
+.light-button {
+  @include basic-button;
+  border: 1px solid $rose500;
+  background: $rose50;
+  font-weight: 400;
+  margin: -26px auto 0 auto;
+}
+
+.light-button:active {
+  border: 1px solid $red;
+  color: $red;
+}
+
+.highlight-button {
+  @include basic-button;
+  background: $red;
+  border: none;
+  color: $rose50;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+}
+
+.amount-button {
+  margin: -26px auto 0 auto;
+  position: relative;
+  z-index: 150;
+  cursor: auto;
+}
+
+.highlight-button {
+  & > * {
+    color: $rose50;
+  }
+}
+
+.round-button {
+  width: 18px;
+  height: 18px;
+  border: 2px solid $rose50;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.round-button:active {
+  background-color: $rose50;
+}
+
+.round-button > svg {
+  fill: $rose50;
+}
+
+.round-button > svg:active {
+  fill: $red;
+}
+.full-size {
+  width: 100%;
+}
+
+.confirm-button {
+  margin-top: 1.4em;
+  padding: 1em 0;
+}
+
+.confirm-button:active {
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}

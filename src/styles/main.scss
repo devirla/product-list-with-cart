@@ -1,0 +1,283 @@
+@import "globals";
+@import "variables";
+@import "buttons";
+
+/*Mixins */
+@mixin round-border {
+  border-radius: 7px;
+}
+/* END Mixins */
+
+/* Text and fonts */
+.highlight-txt {
+  color: $red;
+}
+
+.bright-txt {
+  color: $rose50;
+}
+
+.light-txt {
+  color: $rose400;
+}
+.medium-dark-txt {
+  color: $rose500;
+}
+
+.dark-txt {
+  color: $rose500;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.small-size {
+  font-size: 0.9em;
+}
+
+.normal-size {
+  font-size: 1em;
+}
+
+.big-size {
+  font-size: 1.5em;
+}
+
+.title-size {
+  font-size: 2.5em;
+}
+
+/* END Text and fonts*/
+/* Product List */
+.product-list-container {
+  padding: 1.87em 0 0.5em 0;
+}
+
+.product-image-container {
+  position: relative;
+  z-index: 2;
+}
+
+.product-image {
+  @include round-border;
+  width: 100%;
+}
+
+.product-info {
+  padding: 0.69em 0 1.17em 0;
+}
+
+.product-info {
+  & > * {
+    margin: 0.3em 0;
+  }
+}
+
+/* ENDProduct List */
+/* Cart */
+
+.cart-container {
+  @include round-border;
+  width: 100%;
+  background: $white;
+  padding: 1.6em 1.5em 2em 1.5em;
+}
+
+.cart-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 2.5em 0 0 0;
+}
+
+.cart-item-list {
+  padding: 0.5em 0 0 0;
+}
+
+.cart-order-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 0 0.9em 0;
+}
+
+.carbon-container {
+  width: 100%;
+  @include round-border;
+  display: flex;
+  justify-content: center;
+  background: $rose50;
+  padding: 1.2em 0em;
+}
+
+.carbon-container svg {
+  display: block;
+  margin-right: 10px;
+  margin-left: -10px;
+}
+/*END Cart */
+
+/* Cart Item */
+.cart-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $rose100;
+  padding: 1.1em 0 1em 0;
+}
+
+.cart-item:last-of-type {
+  padding: 1.1em 0 1.5em 0;
+}
+
+.cart-item-price-container {
+  display: flex;
+  gap: 10px;
+  padding: 0.5em 0 0 0;
+}
+
+.cart-item > div > .round-button {
+  border: 2px solid $rose300;
+}
+
+.cart-item > div > .round-button:active {
+  border: 2px solid $rose500;
+}
+
+.cart-item > div > .round-button > svg {
+  fill: $rose300;
+}
+
+.cart-item > div > .round-button > svg:active {
+  fill: $rose500;
+}
+
+/* END Cart Item */
+
+/* Order Confirmed */
+
+.confirmed-container {
+  @include round-border;
+  width: 100%;
+  background: $white;
+  position: absolute;
+  z-index: 200;
+  top: 7.4em;
+  margin: -1.5em;
+  padding: 2.6em 0.5em 2.6em 1.4em;
+}
+
+.confirmed-order-text {
+  padding: 1.2em 1em 0 0;
+  line-height: 2.85em;
+}
+.confirmed-items-container {
+  background: $rose50;
+  margin-top: 1.25em;
+  padding: 0.3em 1.2em 0em 1.5em;
+}
+
+/* END Order Confirmed */
+/* Confrim Cart Item*/
+.confirmed-cart-item {
+  border-bottom: 1px solid $rose100;
+}
+
+.confirmed-cart-item-img {
+  width: 49px;
+  height: 49px;
+}
+
+.confirmed-cart-item-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.confirm-cart-item-info {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 15px;
+  line-height: 1.45em;
+}
+
+.confirm-cart-item-amount {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+/* END Confrim Cart Item*/
+
+@media (min-width: 1000px) {
+  .app-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .app-container > * {
+    flex: 1 1 auto;
+  }
+
+  .product-list-box {
+    width: 59.5%;
+  }
+
+  .product-list-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    gap: 26px;
+    padding: 1.7em 0 0.5em 0;
+  }
+
+  .product-item {
+    position: relative;
+    width: 30%;
+  }
+
+  .product-image {
+    aspect-ratio: 1/0.96;
+    object-fit: cover;
+  }
+  .product-info {
+    padding: 0.6em 0 0.2em 0;
+  }
+
+  .cart-container {
+    margin-left: 1em;
+    padding: 1.55em 1.5em 2.5em 1.6em;
+  }
+
+  .confirmed-container {
+    width: 41%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 22.5em;
+    padding: 2.6em 1.5em 2.6em 2.4em;
+  }
+  .cart-order-summary {
+    margin-bottom: 2.2em;
+  }
+  .confirmed-cart-item {
+    padding: 1em 0 1em 0;
+  }
+}

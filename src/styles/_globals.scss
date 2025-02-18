@@ -1,0 +1,42 @@
+@import "variables";
+
+html {
+  box-sizing: border-box;
+  font-family: "Red Hat Text", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+  padding: 1.3em 1.5em;
+  background: $rose50;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.disabled:before {
+  content: "";
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 160;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 1000px) {
+  html {
+    padding: 5.45em 4em 5.45em 4em;
+  }
+}
+
+@media (min-width: 1100px) {
+  html {
+    padding: 5.45em 7em 5.45em 6.9em;
+  }
+}
