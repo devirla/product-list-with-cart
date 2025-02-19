@@ -1,14 +1,23 @@
-#Product list with cart using Typescript
+# Product list with cart using Typescript
 
-##Table of Contents \*[General info](#general-info) \*[Features](#features) \*[Technologies](#technologies) \*[Setup](#setup) \*[Status](#status) \*[Sources](#sources)
+## Table of Contents
 
-##General info
+<ul>
+  <li>*[General info](#general-info)</li>
+  <li>*[Features](#features)</li>
+  <li>*[Technologies](#technologies)</li>
+  <li>*[Setup](#setup)</li>
+  <li>*[Status](#status)</li>
+  <li>*[Sources](#sources)</li>
+</ul>
+
+## General info
 
 <p>
 Simple product list with a functional cart. The goal of this project is to train programming skills, in particular, global state management using Context API and hooks. You can try live demo here: 
 </p>
 
-##Features
+## Features
 
 <ul>
   <li>Add items to the cart and remove them</li>
@@ -18,7 +27,7 @@ Simple product list with a functional cart. The goal of this project is to train
   <li>Responsive design</li>
 </ul>
 
-##Technologies
+## Technologies
 
 <ul> 
   <li>React</li>
@@ -28,7 +37,7 @@ Simple product list with a functional cart. The goal of this project is to train
   <li>Vite.js</li>
 </ul>
 
-##Setup
+## Setup
 
 To clone and run this application, you'll need Git and Node.js (which comes with npm) installed on your computer. From your command line:
 
@@ -37,7 +46,7 @@ To clone and run this application, you'll need Git and Node.js (which comes with
 $ git clone
 
 # Go into the repository
-$ cd product_list_with_cart
+$ cd product-list-with-cart
 
 # Install dependencies
 $ npm install
@@ -46,7 +55,7 @@ $ npm install
 $ npm start
 ```
 
-##Status
+## Status
 
-##Sources
+## Sources
 Project based on design from https://www.frontendmentor.io/
