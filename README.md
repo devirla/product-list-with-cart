@@ -1,22 +1,23 @@
 # Product list with cart using Typescript
 
 ## Table of Contents
-  -[General info](#general-info)
-   -[Screens](#screens)
-  -[Features](#features)
-  -[Technologies](#technologies)
-  -[Setup](#setup)>
-  -[Status](#status)
-  -[Sources](#sources)
 
-
-## General info
+- [General info](#general-info)
+- [Screens](#screens)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Sources](#sources)
 
 <p>
 Simple product list with a functional cart. The goal of this project is to train programming skills, in particular, global state management using Context API and hooks. You can try live demo here: https://devirla.github.io/product-list-with-cart/ 
 </p>
 
 ## Screens
+
+![Product list - default screen](public/images/screens/screen_productlist_default.png)
+![Product list - screen with added product to the cart](public/images/screens/screen_productlist_addedToCart.png)
+![Product list - order confirmed screen](public/images/screens/screen_productlist_orderConfirmed.png)
 
 ## Features
 
@@ -55,8 +56,6 @@ $ npm install
 # Run the app
 $ npm start
 ```
-
-## Status
 
 ## Sources
 
