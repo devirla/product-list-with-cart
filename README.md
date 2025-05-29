@@ -1,21 +1,22 @@
 # Product list with cart using Typescript
 
 ## Table of Contents
+  -[General info](#general-info)
+   -[Screens](#screens)
+  -[Features](#features)
+  -[Technologies](#technologies)
+  -[Setup](#setup)>
+  -[Status](#status)
+  -[Sources](#sources)
 
-<ul>
-  <li>*[General info](#general-info)</li>
-  <li>*[Features](#features)</li>
-  <li>*[Technologies](#technologies)</li>
-  <li>*[Setup](#setup)</li>
-  <li>*[Status](#status)</li>
-  <li>*[Sources](#sources)</li>
-</ul>
 
 ## General info
 
 <p>
-Simple product list with a functional cart. The goal of this project is to train programming skills, in particular, global state management using Context API and hooks. You can try live demo here: 
+Simple product list with a functional cart. The goal of this project is to train programming skills, in particular, global state management using Context API and hooks. You can try live demo here: https://devirla.github.io/product-list-with-cart/ 
 </p>
+
+## Screens
 
 ## Features
 
@@ -58,4 +59,5 @@ $ npm start
 ## Status
 
 ## Sources
+
 Project based on design from https://www.frontendmentor.io/
